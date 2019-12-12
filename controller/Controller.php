@@ -22,9 +22,13 @@ class Controller {
             case 'login':
                 $this->showTelaLoginView();
                 break;
-            case 'tela nova':
+            case 'telanova':
                 $this->showTelaEduView();
                 break;
+          case 'telaroberta':
+		$this->showtelaRoView();
+		break;
+
             case 'logout':
                 $this->showTelaDeLogoutView();
                 break;
@@ -42,6 +46,9 @@ class Controller {
     private function showTelaEduView(){
         include 'view/edu.php';
     }
+private function showtelaRoView(){
+	include 'view/robertaEduarda.php';
+}
     
     private function showTelaDeLogoutView(){
         $custom = "ahahaha"; //mysql_
